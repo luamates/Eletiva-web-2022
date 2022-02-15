@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(43, 107, 59);
+        }
+        .container {
+            width: 80%;
+
+            margin: auto;
+            margin-top: 100px;
+
+            background-color: whitesmoke;
+        }
+
+        .header {
+            padding: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            padding: 20px;
+
+            background-color: rgb(92, 173, 165);
+        }
+        .red {
+            background-color: rgb(214, 122, 122);
+        }
+        .purple {
+            background-color: rgb(192, 136, 192);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="container">
+        <h1>Minha classe de estilo</h1>
+        <div class="flex-container">
+            <div class="red">
+                TEXTO A
+            </div>
+            <div class="purple">
+                TEXTO B
+            </div>
+            <div class="red">
+                TEXTO C
+            </div>
+        </div>
+    </div>
+
+    <div class="container header">
+        <h1>Minha NÃO classe de estilo</h1>
+    </div>
+
+    <header>
+        Título
+    </header>
+    <main class="container">
+        <section>
+            Texto 1
+        </section>
+        <div>
+            Texto 2
+        </div>
+    </main>
+
+    <footer>
+        Texto 3
+    </footer>
+
 </body>
 </html>
