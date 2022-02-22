@@ -1,2 +1,4 @@
 # Eletiva-web-2022
-Aula Fatec Itu
+Repositório do curso web de Análise e Desenvolvimento de Sistemas da Fatec Itu.
+
+Aqui serão commitados os arquivos das tarefas, trabalhos e projetos da aula.
