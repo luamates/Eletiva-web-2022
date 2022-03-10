@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lâmpada</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		#imageLight {
+			margin: auto;
+			width: 20%;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" onclick="trocarimg()"><img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light bulb" id="imageLight"></a>
+	
+	<script>
+	function trocarimg(){
+
+		let state1 = document.getElementById("imageLight").src;
+		let ligada = 'https://www.w3schools.com/js/pic_bulbon.gif'
+		let desligada = 'https://www.w3schools.com/js/pic_bulboff.gif'
+
+		if(state1 == ligada)
+		{
+			state1 = desligada
+		}
+		else
+		{
+			state1 = ligada
+		}
+		
+		document.getElementById("imageLight").src = state1
+	}
+	</script>
+</body>
+</html>
