@@ -23,6 +23,7 @@
 			margin: auto;
 			width: 25%;
 			transition: .5s;
+			cursor: pointer;
 		}
 
 		#switch-icon {
@@ -30,13 +31,14 @@
 			margin-top: 15%;
 			box-shadow: 5px;
 			transition: .5s;
+			cursor: pointer;
 		}
 	</style>
 </head>
 <body>
-	<a href="#" onclick="trocarimg()"><img src="./img/lampOFF.png" alt="Light bulb" id="imageLight"></a>
+	<img src="./img/lampOFF.png" alt="Light bulb" id="imageLight" onclick="trocarimg()">
 	<br>
-	<a href="#" onclick="trocarimg()"><img src="./img/switchOFF.png" alt="Light bulb" id="switch-icon"></a>
+	<img src="./img/switchOFF.png" alt="Light bulb" id="switch-icon" onclick="trocarimg()">
 
 	<script>
 	var contagem = 0;
