@@ -8,7 +8,7 @@
 	<style>
 		body {
 			text-align: center;
-			background-image: linear-gradient(rgba(79, 104, 82, 0.85),rgba(69, 191, 58, 0.529));
+			background-color: rgba(79, 104, 82, 0.85);
 			background-repeat: no-repeat;
 			background-size: cover;
 			margin: 0px;
@@ -22,12 +22,14 @@
 		#imageLight {
 			margin: auto;
 			width: 25%;
+			transition: .5s;
 		}
 
 		#switch-icon {
 			width: 60px;
 			margin-top: 15%;
 			box-shadow: 5px;
+			transition: .5s;
 		}
 	</style>
 </head>
@@ -54,6 +56,7 @@
 			state = desligada;
 			document.getElementById("switch-icon").src = "./img/switchOFF.png"
 			document.body.style.background = 'rgba(79, 104, 82, 0.85)';
+			
 		}
 		contagem += 1;
 		document.getElementById("imageLight").src = state;
