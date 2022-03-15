@@ -8,7 +8,7 @@
 	<style>
 		body {
 			text-align: center;
-			background-image: linear-gradient(rgba(13, 85, 22, 0.85),rgba(69, 191, 58, 0.529));
+			background-image: linear-gradient(rgba(79, 104, 82, 0.85),rgba(69, 191, 58, 0.529));
 			background-repeat: no-repeat;
 			background-size: cover;
 			margin: 0px;
@@ -16,33 +16,47 @@
 			min-height: 100vw;
 			overflow: hidden;
 			margin-top: 20px;
+			transition: .5s;
 		}
+
 		#imageLight {
 			margin: auto;
-			width: 20%;
+			width: 25%;
+		}
+
+		#switch-icon {
+			width: 60px;
+			margin-top: 15%;
+			box-shadow: 5px;
 		}
 	</style>
 </head>
 <body>
-	<a href="#" onclick="trocarimg()"><img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light bulb" id="imageLight"></a>
-	
+	<a href="#" onclick="trocarimg()"><img src="./img/lampOFF.png" alt="Light bulb" id="imageLight"></a>
+	<br>
+	<a href="#" onclick="trocarimg()"><img src="./img/switchOFF.png" alt="Light bulb" id="switch-icon"></a>
+
 	<script>
+	var contagem = 0;
+
 	function trocarimg(){
+		let ligada = "./img/lampON.png"
+		let desligada = "./img/lampOFF.png"
 
-		let state1 = document.getElementById("imageLight").src;
-		let ligada = 'https://www.w3schools.com/js/pic_bulbon.gif'
-		let desligada = 'https://www.w3schools.com/js/pic_bulboff.gif'
-
-		if(state1 == ligada)
+		if(contagem % 2 == 0)
 		{
-			state1 = desligada
+			state = ligada;
+			document.getElementById("switch-icon").src = "./img/switchON.png";
+			document.body.style.background = 'rgba(69, 191, 58, 0.529)';
 		}
 		else
 		{
-			state1 = ligada
+			state = desligada;
+			document.getElementById("switch-icon").src = "./img/switchOFF.png"
+			document.body.style.background = 'rgba(79, 104, 82, 0.85)';
 		}
-		
-		document.getElementById("imageLight").src = state1
+		contagem += 1;
+		document.getElementById("imageLight").src = state;
 	}
 	</script>
 </body>
