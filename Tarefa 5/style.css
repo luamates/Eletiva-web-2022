@@ -51,6 +51,8 @@ body{
     flex-direction: row;
     text-align: center;
     padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
 }
 
 .dish {
@@ -71,11 +73,36 @@ body{
     font-size: 17px;
 }
 
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 
+.personal-data > input {
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-bottom: 5px;
+}
 
+.personal-data > input:focus {
+    border: none;
+}
 
+.personal-data > h1 {
+    font-size: 20px;
+    font-weight: 700
+}
 
-
+#calculate {
+    height: 50px;
+    background-color: rgb(43, 73, 192);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
 
 
 
