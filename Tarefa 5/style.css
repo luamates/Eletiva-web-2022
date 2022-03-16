@@ -1,0 +1,149 @@
+body{
+    background-color: grey;
+    margin: 0;
+    padding-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 250;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: auto;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 55vw;
+    text-align: center;
+
+}
+
+.images > img {
+    width: 98%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-text > h1 {
+    font-size: 23px;
+}
+
+.main-text > h2 {
+    font-size: 20px;
+    font-weight: 700
+}
+
+.main-text > p {
+    font-size: 15px;
+}
+
+.main-flex {
+    text-align: center;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+}
+
+
+.line-flex {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5%;
+}
+
+.dish {
+    width: 32%;
+    margin-top: -20px;
+    margin-right: 2px;
+    margin-left: 2px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+}
+
+.dish > img {
+    width: 95%;
+    height: 10vw;
+}
+
+.dish > h1 {
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+}
+
+.quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
