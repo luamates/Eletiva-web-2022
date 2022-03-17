@@ -118,11 +118,6 @@ body{
     margin-right: 15%;
 }
 
-
-
-
-
-
 .quantity {
     display: flex;
     flex-direction: row;
@@ -185,4 +180,11 @@ body{
 .quantity.buttons_added .minus:focus,
 .quantity.buttons_added .plus:focus {
     outline: none;
+}
+
+#saida {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 100;
 }
