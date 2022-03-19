@@ -1,32 +1,45 @@
 var prods = [
-    { id: 1, name: "Bife com batatas", price: 30.0 },
-    { id: 2, name: "Coxa de frango crocante", price: 25.0 },
-    { id: 3, name: "Carne de panela", price: 22.0 },
-    { id: 4, name: "Farofa", price: 10.0 },
-    { id: 5, name: "Salada", price: 8.0 },
-    { id: 6, name: "Torresmo", price: 12.0 },
+    { id: 1, name: "Bife com batatas"},
+    { id: 2, name: "Coxa de frango crocante"},
+    { id: 3, name: "Carne de panela"},
+    { id: 4, name: "Farofa"},
+    { id: 5, name: "Salada"},
+    { id: 6, name: "Torresmo"},
 ];
 
-function calc(){ 
+var thePrices = [30, 25, 22, 10, 8, 12]
 
-       
+function start(){
     saida.innerHTML = '';
-    var quantities = document.getElementsByName("quantity");
     
+    var customerName, customerNumber, customerEmail;
    
-        alert(document.getElementById('customerName').value)
+    customerName = document.getElementById('customerName').value
+    customerNumber = document.getElementById('phone').value
+    customerEmail = document.getElementById('email').value
 
-        let cliNome = document.getElementById('customerName').value
+    if(customerName == "" || customerNumber == "" || customerEmail == "")
+    {
+        alert("Por favor, insira todos os dados.");
+    }
+    else
+    {
+        saida.innerHTML += "Caro <b>" + customerName + "</b><br><br> Seguem os dados do seu pedido. <br><br> O seu pedido é: <br><br>"
+        var finalPrice = 0
 
-        saida.innerHTML += "Caro <b>" + cliNome + "</b><br><br> Seguem os dados do seu pedido. <br><br> O seu pedido é: <br><br>"
+        for(i = 0 ; i < 6 ; i++)
+        {
+            idBYi = i + 1;
+            quant = document.getElementById(idBYi).value
+            
+            if(quant != 0)
+            {
+                var totalPrice = thePrices[i] * quant
+                finalPrice += totalPrice;
 
-        for (let input of quantities) {
-            saida.innerHTML += ` Produto: ${prods[input.id-1].name}  - Preço: ${prods[input.id-1].price} - Quantidade: ${input.value} </br>`
+                saida.innerHTML += "<li>Prato: " + prods[i].name + " - Preço unitário: R$ " + thePrices[i] + " - Quantidade: " + quant + " - Total: R$ " + totalPrice;
+            }
         }
-    
-
-
-
-    
+        saida.innerHTML += "<br><br><b>Preço final R$ " + finalPrice + "<b>";
+    }
 }
-
