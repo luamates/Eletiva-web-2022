@@ -1,8 +1,8 @@
-body{
+body {
     background-color: grey;
     margin: 0;
     padding-top: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 250;
 }
 
@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     background-color: white;
     margin: auto;
+    margin-bottom: 10px;
     border-width: 3px;
     border-radius: 10px;
     padding: 20px;
@@ -18,23 +19,23 @@ body{
     text-align: center;
 }
 
-.images > img {
+.images>img {
     width: 98%;
     height: 250px;
     margin: auto;
     border-radius: 10px;
 }
 
-.main-text > h1 {
+.main-text>h1 {
     font-size: 23px;
 }
 
-.main-text > h2 {
+.main-text>h2 {
     font-size: 20px;
     font-weight: 700
 }
 
-.main-text > p {
+.main-text>p {
     font-size: 15px;
 }
 
@@ -64,16 +65,17 @@ body{
     border-radius: 10px;
 }
 
-.dish > img {
+.dish>img {
     width: 95%;
     height: 10vw;
+    border-radius: 2px;
 }
 
-.dish > h1 {
+.dish>h1 {
     font-size: 17px;
 }
 
-.dish > h2 {
+.dish>h2 {
     color: green;
 }
 
@@ -84,7 +86,7 @@ body{
     margin-top: 20px;
 }
 
-.personal-data > input {
+.personal-data>input {
     margin: auto;
     width: 90%;
     height: 50px;
@@ -92,11 +94,11 @@ body{
     margin-bottom: 5px;
 }
 
-.personal-data > input:focus {
+.personal-data>input:focus {
     border: none;
 }
 
-.personal-data > h1 {
+.personal-data>h1 {
     font-size: 20px;
     font-weight: 700
 }
@@ -121,7 +123,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center
-    
 }
 
 .quantity .input-text.qty {
@@ -138,6 +139,7 @@ body{
     position: relative;
     white-space: nowrap;
     vertical-align: top;
+    padding-bottom: 5px;
 }
 
 .quantity.buttons_added input {
