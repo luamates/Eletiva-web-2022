@@ -36,21 +36,36 @@ function start() {
     customerEmail = document.getElementById('email').value
 
     if (customerName == "" || customerNumber == "" || customerEmail == "") {
-        alert("Por favor, insira todos os dados.");
+        document.getElementById("calculate").innerHTML = "Por favor, insira todos os dados para continuar."
+        setTimeout(() => {
+            document.getElementById("calculate").innerHTML = "Calcular";
+        }, 1500);
+
     } else {
         saida.innerHTML += "Caro <b>" + customerName + "</b><br><br> Seguem os dados do seu pedido. <br><br> O seu pedido é: <br><br>"
-        var finalPrice = 0
+        var finalPrice = 0,
+            quantSum = 0;
 
         for (i = 0; i < 6; i++) {
-            idBYi = i + 1;
-            quant = document.getElementById(idBYi).value
+            quant = document.getElementById(i + 1).value
 
             if (quant != 0) {
                 var totalPrice = thePrices[i] * quant
                 finalPrice += totalPrice;
+                quantSum += quant
 
                 saida.innerHTML += "<li>Prato: " + prods[i].name + " - Preço unitário: R$ " + thePrices[i] + ",00 - Quantidade: " + quant + " - Total: R$ " + totalPrice + ",00";
             }
+        }
+        $('html,body').animate({
+            scrollTop: document.body.scrollHeight
+        }, "slow");
+        
+        if (quantSum == 0) {
+            document.getElementById("calculate").innerHTML = "Atenção, pedido vazio."
+            setTimeout(() => {
+                document.getElementById("calculate").innerHTML = "Calcular";
+            }, 1500);
         }
         saida.innerHTML += "<br><br><b>Preço final R$ " + finalPrice + ",00<b>";
     }

@@ -105,18 +105,20 @@ body {
 
 #calculate {
     height: 50px;
-    background-color: rgb(42, 134, 255);
+    background-color: rgb(46, 105, 182);
     border: none;
     border-radius: 5px;
     margin-top: 15px;
     cursor: pointer;
     transition: .5s;
+    color: white;
 }
 
 #calculate:hover {
     background-color: rgb(50, 204, 50);
     margin-left: 15%;
     margin-right: 15%;
+    color: black;
 }
 
 .quantity {
