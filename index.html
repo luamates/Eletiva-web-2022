@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: rgba(165, 42, 42, 0.405);
-        }
-        h2 {
-            text-decoration: none;
-            color: white;
-        }
-        .container {
-            background-color: rgba(15, 58, 58, 0.693);
-            color: white;
-            margin: auto;
-            width: 40%;
-        }
-    </style>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="container">
-        <div>
-            <a href="./Tarefa 1/index.html"><h2>Tarefa 1</h2></a>
+    <div class="container-flex">
+        <div class="assignment-flex" onclick="tarefa1()">
+            <div class="repo-icon">
+                <img src="./icons/tarefa1.webp" alt="project icon">
+            </div>
+            <div class="repo-text">
+                <h1>Trabalhando com divs</h1>
+                <p>Anotações da primeira aula de desenvolvimento web, com divs, textos e estilos CSS.</p>
+            </div>
         </div>
-        <div>
-            <a href="./Tarefa 2/tarefa2.html"><h2>Tarefa 2</h2></a>
+
+        <div class="assignment-flex">
+            <div class="repo-icon">
+                <img src="./icons/tarefa2.png" alt="project icon">
+            </div>
+            <div class="repo-text">
+                <h1>Layout HTML estilizado</h1>
+                <p>Primeiro projeto com objetivo de replicar um layout HTML/CSS focando no estudo do uso de divs.</p>
+            </div>
         </div>
-        <div>
-            <a href="./Tarefa 3/index.html"><h2>Tarefa 3</h2></a>
+
+        <div class="assignment-flex">
+            <div class="repo-icon">
+                <img src="./icons/tarefa3.png" alt="project icon">
+            </div>
+            <div class="repo-text">
+                <h1>Gamers Lovers Enquete</h1>
+                <p>Projeto estático usando apenas HTML/CSS para criação de um site de votação gamer.</p>
+            </div>
         </div>
-        <div>
-            <a href="./Tarefa 4/index.html"> <h2>Tarefa 4</h2></a>
+
+        <div class="assignment-flex">
+            <div class="repo-icon">
+                <img src="./icons/tarefa4.ico" alt="project icon">
+            </div>
+            <div class="repo-text">
+                <h1>Lâmpada Javascript</h1>
+                <p>Projeto desenvolvido com HTML, CSS e JAVASCRIPT, aplicando programação para ligar e desligar uma lâmpada. </p>
+            </div>
         </div>
-        <div>
-            <a href="./Tarefa 5/index.html"> <h2>Tarefa 5</h2></a>
+
+        <div class="assignment-flex">
+            <div class="repo-icon">
+                <img src="./icons/tarefa5.png" alt="project icon">
+            </div>
+            <div class="repo-text">
+                <h1>Menu de restaurante</h1>
+                <p>Projeto de um menu para um restaurante, que tem 6 pratos. O site calcula automaticamente os preços e o pagamento final.</p>
+            </div>
         </div>
     </div>
 </body>
