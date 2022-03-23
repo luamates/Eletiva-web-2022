@@ -28,7 +28,7 @@ body {
     align-items: center;
 }
 
-.repo-icon > img {
+.repo-icon>img {
     width: 120px;
     height: auto;
     border-radius: 50%;
