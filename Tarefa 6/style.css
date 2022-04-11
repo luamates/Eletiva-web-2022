@@ -24,9 +24,6 @@
     height: 500px;
 }
 
-
-
-
 body {
     margin: 0;
     padding-top: 10px;
@@ -74,7 +71,6 @@ body {
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
     margin-bottom: 100px;
 }
-
 
 .line-flex {
     display: flex;
